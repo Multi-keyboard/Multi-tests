@@ -17,7 +17,14 @@ Requirements:
 * USB FS
 * available reference design with usb device
 
-Choice went to STM32F303RCTx for the 3*8 GPIO pins
-STM32F3DISCOVERY reference design with a 303VC mcu, almost the same
+### MCU
+Choice went to STM32F303RCTx for the number of GPIO pins, floating point unit, RAM, and program space.
+STM32F3DISCOVERY reference design with a STM32F303VC mcu, which almost the same.
 
-LEDs: SK9822 ?
+### Power
+**Multiple power sources**
+We want to power the board from both USB and the programming port at the same time. We need schottky diodes for that. BAT60 does 3A and the forward voltage at 1A is under 0.5V depending on model. They're perfect.
+**LEDs power**
+The LEDS will only be powered from the USB port, not from the programming power.
+**Regulator**
+We will combine them with a LDO regulator (for the MCU only) to power it from (5V - Vf) => 3.3V.
