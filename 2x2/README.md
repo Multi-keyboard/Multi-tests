@@ -28,3 +28,9 @@ We want to power the board from both USB and the programming port at the same ti
 The LEDS will only be powered from the USB port, not from the programming power.
 **Regulator**
 We will combine them with a LDO regulator (for the MCU only) to power it from (5V - Vf) => 3.3V.
+
+### Switches, Diodes, Leds
+
+This was a hard one. Cherry MX switches only supports 1.6x1.7x0.6mm size leds at most.
+Let's use Gateron switches which are cheaper and supports something like 9x3mm.
+Led choice is now larger. APA102-2020 looks good. They fit, they have a SPI interface.
