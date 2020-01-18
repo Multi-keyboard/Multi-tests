@@ -633,50 +633,6 @@ Wire Wire Line
 Connection ~ 900  3800
 Wire Wire Line
 	900  3800 900  3700
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5E2A13A4
-P 650 10400
-F 0 "H?" H 750 10446 50  0000 L CNN
-F 1 "MountingHole" H 750 10355 50  0000 L CNN
-F 2 "" H 650 10400 50  0001 C CNN
-F 3 "~" H 650 10400 50  0001 C CNN
-	1    650  10400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5E2A26D8
-P 650 10600
-F 0 "H?" H 750 10646 50  0000 L CNN
-F 1 "MountingHole" H 750 10555 50  0000 L CNN
-F 2 "" H 650 10600 50  0001 C CNN
-F 3 "~" H 650 10600 50  0001 C CNN
-	1    650  10600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5E2A2954
-P 650 10800
-F 0 "H?" H 750 10846 50  0000 L CNN
-F 1 "MountingHole" H 750 10755 50  0000 L CNN
-F 2 "" H 650 10800 50  0001 C CNN
-F 3 "~" H 650 10800 50  0001 C CNN
-	1    650  10800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H?
-U 1 1 5E2A2B41
-P 650 11000
-F 0 "H?" H 750 11046 50  0000 L CNN
-F 1 "MountingHole" H 750 10955 50  0000 L CNN
-F 2 "" H 650 11000 50  0001 C CNN
-F 3 "~" H 650 11000 50  0001 C CNN
-	1    650  11000
-	1    0    0    -1  
-$EndComp
 Text GLabel 10650 1650 1    50   Input ~ 0
 col1
 $Comp
@@ -921,4 +877,94 @@ Wire Wire Line
 Wire Wire Line
 	9600 3450 10700 3450
 Connection ~ 9600 3450
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E43DBA7
+P 1000 9700
+F 0 "H?" V 954 9850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 9850 50  0000 L CNN
+F 2 "" H 1000 9700 50  0001 C CNN
+F 3 "~" H 1000 9700 50  0001 C CNN
+	1    1000 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E43EDA0
+P 1000 9900
+F 0 "H?" V 954 10050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 10050 50  0000 L CNN
+F 2 "" H 1000 9900 50  0001 C CNN
+F 3 "~" H 1000 9900 50  0001 C CNN
+	1    1000 9900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E43EFBD
+P 1000 10100
+F 0 "H?" V 954 10250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 10250 50  0000 L CNN
+F 2 "" H 1000 10100 50  0001 C CNN
+F 3 "~" H 1000 10100 50  0001 C CNN
+	1    1000 10100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E43F1D9
+P 1000 10300
+F 0 "H?" V 954 10450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 10450 50  0000 L CNN
+F 2 "" H 1000 10300 50  0001 C CNN
+F 3 "~" H 1000 10300 50  0001 C CNN
+	1    1000 10300
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5E43F428
+P 1000 10500
+F 0 "H?" V 954 10650 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 10650 50  0000 L CNN
+F 2 "" H 1000 10500 50  0001 C CNN
+F 3 "~" H 1000 10500 50  0001 C CNN
+	1    1000 10500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E43F76F
+P 800 10600
+F 0 "#PWR?" H 800 10350 50  0001 C CNN
+F 1 "GND" H 805 10427 50  0000 C CNN
+F 2 "" H 800 10600 50  0001 C CNN
+F 3 "" H 800 10600 50  0001 C CNN
+	1    800  10600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  10600 800  10500
+Wire Wire Line
+	800  9700 900  9700
+Wire Wire Line
+	900  9900 800  9900
+Connection ~ 800  9900
+Wire Wire Line
+	800  9900 800  9700
+Wire Wire Line
+	900  10100 800  10100
+Connection ~ 800  10100
+Wire Wire Line
+	800  10100 800  9900
+Wire Wire Line
+	900  10300 800  10300
+Connection ~ 800  10300
+Wire Wire Line
+	800  10300 800  10100
+Wire Wire Line
+	900  10500 800  10500
+Connection ~ 800  10500
+Wire Wire Line
+	800  10500 800  10300
 $EndSCHEMATC
