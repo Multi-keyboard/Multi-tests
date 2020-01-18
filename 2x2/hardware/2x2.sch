@@ -5,14 +5,14 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "2x2"
+Date "2020-01-18"
 Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "4 key keyboard"
 $EndDescr
 $Comp
 L MCU_ST_STM32F3:STM32F303RCTx U?
@@ -699,4 +699,120 @@ F 3 "~" H 650 11000 50  0001 C CNN
 	1    650  11000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E23CB9E
+P 10200 2500
+F 0 "SW?" H 10200 2785 50  0000 C CNN
+F 1 "SW_Push" H 10200 2694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10200 2700 50  0001 C CNN
+F 3 "~" H 10200 2700 50  0001 C CNN
+	1    10200 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 9750 2800 0    50   Input ~ 0
+row0
+Text GLabel 9750 3450 0    50   Input ~ 0
+row1
+Text GLabel 10000 2000 1    50   Input ~ 0
+col0
+Text GLabel 10650 2000 1    50   Input ~ 0
+col1
+$Comp
+L Device:D D?
+U 1 1 5E23FADA
+P 10400 2650
+F 0 "D?" V 10446 2570 50  0000 R CNN
+F 1 "D" V 10355 2570 50  0000 R CNN
+F 2 "" H 10400 2650 50  0001 C CNN
+F 3 "~" H 10400 2650 50  0001 C CNN
+	1    10400 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E24A1E2
+P 10850 2500
+F 0 "SW?" H 10850 2785 50  0000 C CNN
+F 1 "SW_Push" H 10850 2694 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10850 2700 50  0001 C CNN
+F 3 "~" H 10850 2700 50  0001 C CNN
+	1    10850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E24A1EC
+P 11050 2650
+F 0 "D?" V 11096 2570 50  0000 R CNN
+F 1 "D" V 11005 2570 50  0000 R CNN
+F 2 "" H 11050 2650 50  0001 C CNN
+F 3 "~" H 11050 2650 50  0001 C CNN
+	1    11050 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E262559
+P 10200 3150
+F 0 "SW?" H 10200 3435 50  0000 C CNN
+F 1 "SW_Push" H 10200 3344 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10200 3350 50  0001 C CNN
+F 3 "~" H 10200 3350 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E262563
+P 10400 3300
+F 0 "D?" V 10446 3220 50  0000 R CNN
+F 1 "D" V 10355 3220 50  0000 R CNN
+F 2 "" H 10400 3300 50  0001 C CNN
+F 3 "~" H 10400 3300 50  0001 C CNN
+	1    10400 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E2659FE
+P 10850 3150
+F 0 "SW?" H 10850 3435 50  0000 C CNN
+F 1 "SW_Push" H 10850 3344 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10850 3350 50  0001 C CNN
+F 3 "~" H 10850 3350 50  0001 C CNN
+	1    10850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E265A08
+P 11050 3300
+F 0 "D?" V 11096 3220 50  0000 R CNN
+F 1 "D" V 11005 3220 50  0000 R CNN
+F 2 "" H 11050 3300 50  0001 C CNN
+F 3 "~" H 11050 3300 50  0001 C CNN
+	1    11050 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 2000 10000 2500
+Wire Wire Line
+	10000 3150 10000 2500
+Connection ~ 10000 2500
+Wire Wire Line
+	9750 2800 10400 2800
+Wire Wire Line
+	10650 2000 10650 2500
+Wire Wire Line
+	10650 2500 10650 3150
+Connection ~ 10650 2500
+Wire Wire Line
+	11050 2800 10400 2800
+Connection ~ 10400 2800
+Wire Wire Line
+	11050 3450 10400 3450
+Wire Wire Line
+	10400 3450 9750 3450
+Connection ~ 10400 3450
 $EndSCHEMATC
