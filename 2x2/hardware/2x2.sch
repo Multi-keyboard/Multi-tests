@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 "4 key keyboard"
 $EndDescr
 $Comp
-L MCU_ST_STM32F3:STM32F303RCTx U?
+L MCU_ST_STM32F3:STM32F303RCTx U2
 U 1 1 5E178946
 P 6350 6850
-F 0 "U?" H 6900 5100 50  0000 C CNN
+F 0 "U2" H 6900 5100 50  0000 C CNN
 F 1 "STM32F303RCTx" H 6900 5000 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5750 5150 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00058181.pdf" H 6350 6850 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 5E17BF4D
 P 3350 3450
-F 0 "Y?" V 3396 3319 50  0000 R CNN
+F 0 "Y1" V 3396 3319 50  0000 R CNN
 F 1 "8 Mhz" V 3305 3319 50  0000 R CNN
 F 2 "" H 3350 3450 50  0001 C CNN
 F 3 "~" H 3350 3450 50  0001 C CNN
@@ -59,23 +59,23 @@ F 3 "" H 3600 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C4
 U 1 1 5E17ED6C
 P 3600 3700
-F 0 "C?" H 3715 3746 50  0000 L CNN
-F 1 "20p" H 3715 3655 50  0000 L CNN
-F 2 "" H 3638 3550 50  0001 C CNN
+F 0 "C4" H 3715 3746 50  0000 L CNN
+F 1 "22p" H 3715 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3638 3550 50  0001 C CNN
 F 3 "~" H 3600 3700 50  0001 C CNN
 	1    3600 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5E17F3FF
 P 3100 3700
-F 0 "C?" H 3215 3746 50  0000 L CNN
-F 1 "20p" H 3215 3655 50  0000 L CNN
-F 2 "" H 3138 3550 50  0001 C CNN
+F 0 "C3" H 3215 3746 50  0000 L CNN
+F 1 "22p" H 3215 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 3550 50  0001 C CNN
 F 3 "~" H 3100 3700 50  0001 C CNN
 	1    3100 3700
 	1    0    0    -1  
@@ -101,12 +101,12 @@ PF0
 Text Label 5650 6450 2    50   ~ 0
 PF1
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5E18296E
 P 1500 1750
-F 0 "J?" H 1607 2617 50  0000 C CNN
+F 0 "J1" H 1607 2617 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1607 2526 50  0000 C CNN
-F 2 "" H 1650 1750 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 1650 1750 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1650 1750 50  0001 C CNN
 	1    1500 1750
 	1    0    0    -1  
@@ -132,65 +132,28 @@ Wire Wire Line
 	2200 1050 2200 1150
 Wire Wire Line
 	2200 1150 2100 1150
-Text Label 7450 6450 0    50   ~ 0
-D+
 Text Label 7050 6350 0    50   ~ 0
 D-
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5E1988E4
-P 7350 5950
-F 0 "#PWR?" H 7350 5800 50  0001 C CNN
-F 1 "+3V3" H 7365 6123 50  0000 C CNN
-F 2 "" H 7350 5950 50  0001 C CNN
-F 3 "" H 7350 5950 50  0001 C CNN
-	1    7350 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 5950 7350 6050
-Wire Wire Line
-	7350 6350 7350 6450
-Wire Wire Line
-	7350 6450 7450 6450
-Wire Wire Line
-	7050 6450 7350 6450
-Connection ~ 7350 6450
-$Comp
-L Device:R R?
-U 1 1 5E197F39
-P 7350 6200
-F 0 "R?" H 7420 6246 50  0000 L CNN
-F 1 "1.5k" H 7420 6155 50  0000 L CNN
-F 2 "" V 7280 6200 50  0001 C CNN
-F 3 "~" H 7350 6200 50  0001 C CNN
-	1    7350 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 1750 2650 1850
 Wire Wire Line
 	2350 1850 2350 1950
 Wire Wire Line
-	2650 1450 2650 1350
-Wire Wire Line
 	2350 1450 2350 1550
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5E18AD1E
-P 2650 1600
-F 0 "R?" H 2720 1646 50  0000 L CNN
-F 1 "5.1k" H 2720 1555 50  0000 L CNN
-F 2 "" V 2580 1600 50  0001 C CNN
-F 3 "~" H 2650 1600 50  0001 C CNN
-	1    2650 1600
+P 2650 1700
+F 0 "R2" H 2720 1746 50  0000 L CNN
+F 1 "5.1k" H 2720 1655 50  0000 L CNN
+F 2 "" V 2580 1700 50  0001 C CNN
+F 3 "~" H 2650 1700 50  0001 C CNN
+	1    2650 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5E189B0B
 P 2350 1700
-F 0 "R?" H 2420 1746 50  0000 L CNN
+F 0 "R1" H 2420 1746 50  0000 L CNN
 F 1 "5.1k" H 2420 1655 50  0000 L CNN
 F 2 "" V 2280 1700 50  0001 C CNN
 F 3 "~" H 2350 1700 50  0001 C CNN
@@ -200,12 +163,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E189915
-P 2650 1850
-F 0 "#PWR?" H 2650 1600 50  0001 C CNN
-F 1 "GND" H 2655 1677 50  0000 C CNN
-F 2 "" H 2650 1850 50  0001 C CNN
-F 3 "" H 2650 1850 50  0001 C CNN
-	1    2650 1850
+P 2650 1950
+F 0 "#PWR?" H 2650 1700 50  0001 C CNN
+F 1 "GND" H 2655 1777 50  0000 C CNN
+F 2 "" H 2650 1950 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -312,67 +275,67 @@ F 3 "" H 3900 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 5E19533E
 P 3900 1300
-F 0 "C?" H 4015 1346 50  0000 L CNN
+F 0 "C5" H 4015 1346 50  0000 L CNN
 F 1 "100n" H 4015 1255 50  0000 L CNN
-F 2 "" H 3938 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3938 1150 50  0001 C CNN
 F 3 "~" H 3900 1300 50  0001 C CNN
 	1    3900 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5E1962F0
 P 4300 1300
-F 0 "C?" H 4415 1346 50  0000 L CNN
+F 0 "C6" H 4415 1346 50  0000 L CNN
 F 1 "100n" H 4415 1255 50  0000 L CNN
-F 2 "" H 4338 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4338 1150 50  0001 C CNN
 F 3 "~" H 4300 1300 50  0001 C CNN
 	1    4300 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C7
 U 1 1 5E196B37
 P 4700 1300
-F 0 "C?" H 4815 1346 50  0000 L CNN
+F 0 "C7" H 4815 1346 50  0000 L CNN
 F 1 "100n" H 4815 1255 50  0000 L CNN
-F 2 "" H 4738 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4738 1150 50  0001 C CNN
 F 3 "~" H 4700 1300 50  0001 C CNN
 	1    4700 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 5E197011
 P 5100 1300
-F 0 "C?" H 5215 1346 50  0000 L CNN
+F 0 "C8" H 5215 1346 50  0000 L CNN
 F 1 "100n" H 5215 1255 50  0000 L CNN
-F 2 "" H 5138 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5138 1150 50  0001 C CNN
 F 3 "~" H 5100 1300 50  0001 C CNN
 	1    5100 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 5E1974EA
 P 5500 1300
-F 0 "C?" H 5615 1346 50  0000 L CNN
+F 0 "C9" H 5615 1346 50  0000 L CNN
 F 1 "100n" H 5615 1255 50  0000 L CNN
-F 2 "" H 5538 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5538 1150 50  0001 C CNN
 F 3 "~" H 5500 1300 50  0001 C CNN
 	1    5500 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 5E1978E6
 P 5900 1300
-F 0 "C?" H 6015 1346 50  0000 L CNN
+F 0 "C10" H 6015 1346 50  0000 L CNN
 F 1 "100n" H 6015 1255 50  0000 L CNN
-F 2 "" H 5938 1150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5938 1150 50  0001 C CNN
 F 3 "~" H 5900 1300 50  0001 C CNN
 	1    5900 1300
 	1    0    0    -1  
@@ -443,8 +406,6 @@ Text Label 2100 1950 0    50   ~ 0
 D+
 Wire Wire Line
 	2100 1450 2350 1450
-Wire Wire Line
-	2100 1350 2650 1350
 $Comp
 L power:GND #PWR?
 U 1 1 5E23C562
@@ -461,11 +422,11 @@ Wire Wire Line
 Wire Wire Line
 	6950 1450 6850 1450
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J2
 U 1 1 5E23F52F
 P 6650 1350
-F 0 "J?" H 6568 925 50  0000 C CNN
-F 1 "Conn_01x04" H 6568 1016 50  0000 C CNN
+F 0 "J2" H 6568 925 50  0000 C CNN
+F 1 "Programming connector" H 6568 1016 50  0000 C CNN
 F 2 "" H 6650 1350 50  0001 C CNN
 F 3 "~" H 6650 1350 50  0001 C CNN
 	1    6650 1350
@@ -495,10 +456,10 @@ F 3 "" H 5550 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5E24232B
 P 5550 5700
-F 0 "R?" H 5620 5746 50  0000 L CNN
+F 0 "R5" H 5620 5746 50  0000 L CNN
 F 1 "R" H 5620 5655 50  0000 L CNN
 F 2 "" V 5480 5700 50  0001 C CNN
 F 3 "~" H 5550 5700 50  0001 C CNN
@@ -512,10 +473,10 @@ Wire Wire Line
 Wire Wire Line
 	5550 5850 5550 5950
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5E24A0FC
 P 5550 5000
-F 0 "R?" H 5620 5046 50  0000 L CNN
+F 0 "R4" H 5620 5046 50  0000 L CNN
 F 1 "R" H 5620 4955 50  0000 L CNN
 F 2 "" V 5480 5000 50  0001 C CNN
 F 3 "~" H 5550 5000 50  0001 C CNN
@@ -552,10 +513,10 @@ Connection ~ 1500 2750
 Wire Wire Line
 	1500 2750 1500 2850
 $Comp
-L Regulator_Linear:AMS1117-3.3 U?
+L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 5E25DF5D
 P 1400 3800
-F 0 "U?" H 1400 4042 50  0000 C CNN
+F 0 "U1" H 1400 4042 50  0000 C CNN
 F 1 "AMS1117-3.3" H 1400 3951 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1400 4000 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1500 3550 50  0001 C CNN
@@ -585,23 +546,23 @@ F 3 "" H 1900 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5E279D7D
 P 1150 4200
-F 0 "C?" V 898 4200 50  0000 C CNN
+F 0 "C1" V 898 4200 50  0000 C CNN
 F 1 "10u" V 989 4200 50  0000 C CNN
-F 2 "" H 1188 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1188 4050 50  0001 C CNN
 F 3 "~" H 1150 4200 50  0001 C CNN
 	1    1150 4200
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5E27AF32
 P 1650 4200
-F 0 "C?" V 1398 4200 50  0000 C CNN
+F 0 "C2" V 1398 4200 50  0000 C CNN
 F 1 "10u" V 1489 4200 50  0000 C CNN
-F 2 "" H 1688 4050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 4050 50  0001 C CNN
 F 3 "~" H 1650 4200 50  0001 C CNN
 	1    1650 4200
 	0    1    1    0   
@@ -635,17 +596,6 @@ Wire Wire Line
 	900  3800 900  3700
 Text GLabel 10650 1650 1    50   Input ~ 0
 col1
-$Comp
-L User_Modules:SW_D_RGB_LED SW?
-U 1 1 5E362BCC
-P 10100 2000
-F 0 "SW?" H 10100 2365 50  0000 C CNN
-F 1 "SW_D_RGB_LED" H 10100 2274 50  0000 C CNN
-F 2 "" H 10140 1805 50  0001 C CNN
-F 3 "" H 10140 1805 50  0001 C CNN
-	1    10100 2000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5E363FBD
@@ -693,10 +643,10 @@ $EndComp
 Text Notes 9900 1250 0    50   ~ 0
 Gateron SMD transparent switches\ndiodes?\nAPA102-2020 LEDS
 $Comp
-L User_Modules:SW_D_RGB_LED SW?
+L User_Modules:SW_D_RGB_LED SW4
 U 1 1 5E36A140
 P 11250 2000
-F 0 "SW?" H 11250 2365 50  0000 C CNN
+F 0 "SW4" H 11250 2365 50  0000 C CNN
 F 1 "SW_D_RGB_LED" H 11250 2274 50  0000 C CNN
 F 2 "" H 11290 1805 50  0001 C CNN
 F 3 "" H 11290 1805 50  0001 C CNN
@@ -726,10 +676,10 @@ F 3 "" H 11650 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L User_Modules:SW_D_RGB_LED SW?
+L User_Modules:SW_D_RGB_LED SW2
 U 1 1 5E373E62
 P 10100 3050
-F 0 "SW?" H 10100 3415 50  0000 C CNN
+F 0 "SW2" H 10100 3415 50  0000 C CNN
 F 1 "SW_D_RGB_LED" H 10100 3324 50  0000 C CNN
 F 2 "" H 10140 2855 50  0001 C CNN
 F 3 "" H 10140 2855 50  0001 C CNN
@@ -759,10 +709,10 @@ F 3 "" H 10500 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L User_Modules:SW_D_RGB_LED SW?
+L User_Modules:SW_D_RGB_LED SW3
 U 1 1 5E373E80
 P 11200 3050
-F 0 "SW?" H 11200 3415 50  0000 C CNN
+F 0 "SW3" H 11200 3415 50  0000 C CNN
 F 1 "SW_D_RGB_LED" H 11200 3324 50  0000 C CNN
 F 2 "" H 11240 2855 50  0001 C CNN
 F 3 "" H 11240 2855 50  0001 C CNN
@@ -878,56 +828,56 @@ Wire Wire Line
 	9600 3450 10700 3450
 Connection ~ 9600 3450
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 5E43DBA7
 P 1000 9700
-F 0 "H?" V 954 9850 50  0000 L CNN
+F 0 "H1" V 954 9850 50  0000 L CNN
 F 1 "MountingHole_Pad" V 1045 9850 50  0000 L CNN
-F 2 "" H 1000 9700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1000 9700 50  0001 C CNN
 F 3 "~" H 1000 9700 50  0001 C CNN
 	1    1000 9700
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 5E43EDA0
 P 1000 9900
-F 0 "H?" V 954 10050 50  0000 L CNN
+F 0 "H2" V 954 10050 50  0000 L CNN
 F 1 "MountingHole_Pad" V 1045 10050 50  0000 L CNN
-F 2 "" H 1000 9900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1000 9900 50  0001 C CNN
 F 3 "~" H 1000 9900 50  0001 C CNN
 	1    1000 9900
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H3
 U 1 1 5E43EFBD
 P 1000 10100
-F 0 "H?" V 954 10250 50  0000 L CNN
+F 0 "H3" V 954 10250 50  0000 L CNN
 F 1 "MountingHole_Pad" V 1045 10250 50  0000 L CNN
-F 2 "" H 1000 10100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1000 10100 50  0001 C CNN
 F 3 "~" H 1000 10100 50  0001 C CNN
 	1    1000 10100
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H4
 U 1 1 5E43F1D9
 P 1000 10300
-F 0 "H?" V 954 10450 50  0000 L CNN
+F 0 "H4" V 954 10450 50  0000 L CNN
 F 1 "MountingHole_Pad" V 1045 10450 50  0000 L CNN
-F 2 "" H 1000 10300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1000 10300 50  0001 C CNN
 F 3 "~" H 1000 10300 50  0001 C CNN
 	1    1000 10300
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H5
 U 1 1 5E43F428
 P 1000 10500
-F 0 "H?" V 954 10650 50  0000 L CNN
+F 0 "H5" V 954 10650 50  0000 L CNN
 F 1 "MountingHole_Pad" V 1045 10650 50  0000 L CNN
-F 2 "" H 1000 10500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1000 10500 50  0001 C CNN
 F 3 "~" H 1000 10500 50  0001 C CNN
 	1    1000 10500
 	0    1    1    0   
@@ -967,4 +917,63 @@ Wire Wire Line
 Connection ~ 800  10500
 Wire Wire Line
 	800  10500 800  10300
+$Comp
+L User_Modules:SW_D_RGB_LED SW1
+U 1 1 5E362BCC
+P 10100 2000
+F 0 "SW1" H 10100 2365 50  0000 C CNN
+F 1 "SW_D_RGB_LED" H 10100 2274 50  0000 C CNN
+F 2 "" H 10140 1805 50  0001 C CNN
+F 3 "" H 10140 1805 50  0001 C CNN
+	1    10100 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7050 7750 2    50   Input ~ 0
+row1
+Text GLabel 7050 7850 2    50   Input ~ 0
+row0
+Text GLabel 7050 8050 2    50   Input ~ 0
+col0
+Text GLabel 7050 7950 2    50   Input ~ 0
+col1
+Text Label 7050 6450 0    50   ~ 0
+D+
+Text Label 2950 1950 0    50   ~ 0
+D+
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E1988E4
+P 2950 1450
+F 0 "#PWR?" H 2950 1300 50  0001 C CNN
+F 1 "+3V3" H 2965 1623 50  0000 C CNN
+F 2 "" H 2950 1450 50  0001 C CNN
+F 3 "" H 2950 1450 50  0001 C CNN
+	1    2950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1450 2950 1550
+Wire Wire Line
+	2950 1850 2950 1950
+$Comp
+L Device:R R3
+U 1 1 5E197F39
+P 2950 1700
+F 0 "R3" H 3020 1746 50  0000 L CNN
+F 1 "1.5k" H 3020 1655 50  0000 L CNN
+F 2 "" V 2880 1700 50  0001 C CNN
+F 3 "~" H 2950 1700 50  0001 C CNN
+	1    2950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1350 2650 1350
+Wire Wire Line
+	2650 1350 2650 1550
+Wire Wire Line
+	2650 1850 2650 1950
+Text GLabel 7050 5950 2    50   Input ~ 0
+LED_MOSI
+Text GLabel 7050 5750 2    50   Input ~ 0
+LED_CLK
 $EndSCHEMATC
